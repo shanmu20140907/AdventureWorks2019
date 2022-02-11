@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [HumanResources].[Employee] (
     [BusinessEntityID]  INT                 NOT NULL,
-    [NationalIDNumber]  NVARCHAR (15)       NOT NULL,
+    [NationalIDNumber]  NVARCHAR (250)       NOT NULL,
     [LoginID]           NVARCHAR (256)      NOT NULL,
     [OrganizationNode]  [sys].[hierarchyid] NULL,
     [OrganizationLevel] AS                  ([OrganizationNode].[GetLevel]()),
